@@ -1,7 +1,7 @@
 # vue-use-local-storage
 
 A composition api to persist and rehydrate reactive data for vue 3.
-##### Caution: Tested on vue 3 reactive() only, didn't test for ref().
+##### Caution: Tested on vue 3 reactive() only, didn't test for ref(). ref() data shouldn't work with this.
 
 ### Demo
 [Demo](https://hj29.github.io/vue-use-local-storage/)
@@ -30,7 +30,9 @@ export default defineComponent({
      * basic usage
      * state: typeof reactive
      * key: string
-     * whitelist?: string[] !optional, whitelist keys of state
+     * whitelist?: string[] !optional 
+     *    whitelist keys of state to persist. 
+     *    ignore whitelist if you wish to persist whole object
      */
     const storage = useLocalStorage(state, 'someKey', ['someValue'])
     /**

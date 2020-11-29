@@ -29,9 +29,10 @@ export default defineComponent({
       ignoreValue: faker.name.firstName()
     });
 
-    useLocalStorage(state, 'someKey', ['persistValue']).onRehydrate((state) => {
-      console.log(state);
-    });
+    useLocalStorage(state, 'someKey', ['persistValue'])
+      .onRehydrate((state) => {
+        console.log(state);
+      });
 
     function onRandomPersist() {
       state.persistValue = faker.name.firstName();
