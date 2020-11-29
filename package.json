@@ -1,0 +1,46 @@
+{
+  "name": "vue-use-local-storage",
+  "version": "0.0.1",
+  "private": false,
+  "description": "A composition api to persist and rehydrate reactive data for vue 3.",
+  "author": "hj <hjian5567@gmail.com>",
+  "main": "dist/vue-use-local-storage.common.js",
+  "unpkg": "dist/vue-use-local-storage.umd.min.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "lint": "vue-cli-service lint",
+    "build": "vue-cli-service build --target lib --name vue-use-local-storage ./src/main.ts",
+    "publish": "npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HJ29/vue-use-local-storage.git"
+  },
+  "files": [
+    "dist/*.js"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "vue-use-local-storage",
+    "Vue",
+    "Vue3",
+    "composition api",
+    "hook",
+    "localstorage"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0-0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "core-js": "^3.6.5",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "typescript": "~3.9.3",
+    "vue": "^3.0.0-0"
+  }
+}
