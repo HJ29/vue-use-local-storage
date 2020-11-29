@@ -1,6 +1,6 @@
 # vue-use-local-storage
 
-A composition api to persist and rehydrate reactive data for vue 3.
+A composition api to persist and rehydrate reactive data to local storage for vue 3.
 ##### Caution: Tested on vue 3 reactive() only, didn't test for ref(). ref() data shouldn't work with this.
 
 ### Demo
